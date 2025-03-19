@@ -10,7 +10,7 @@ function Cadastro() {
             <input placeholder="Nome" type="text" className="border w-full mb-2 indent-3 rounded-md p-1 placeholder-black opacity-70 " />
             <input placeholder="E-mail" type="email" className=" border  w-full mb-2 indent-3 rounded-md p-1 placeholder-black  opacity-70" />
             <input placeholder="Senha" type="password" className=" border  w-full mb-2 indent-3 rounded-md p-1 placeholder-black  opacity-70 " />
-            <button className=" w-full rounded-md border-none mb-1 mt-2 bg-cyan-950 text-white p-1  hover:opacity-80   cursor-pointer delay-200  hover:scale-101 duration-100 ease-in-out font-bold " onClick={cadastrar()} >Cadastrar</button>
+            <button className=" w-full rounded-md border-none mb-1 mt-2 bg-cyan-950 text-white p-1  hover:opacity-80   cursor-pointer delay-200  hover:scale-101 duration-100 ease-in-out font-bold ">Cadastrar</button>
           </form>
           <Link to="/login" className="text-center mb-1 font-mono font-bold hover:underline">Já tem uma conta?
             Faça login</Link>
@@ -18,14 +18,4 @@ function Cadastro() {
     </body>
   )
 }
-let nome = document.getElementsByTagName("text")
-let email = document.getElementsByClassName("email")
-let senha = document.getElementsByClassName("password")
-
-function cadastrar(){
-  if(nome.length === 0 || nome === ""){
-    alert("ERRO")
-  }
-}
-
 export default Cadastro

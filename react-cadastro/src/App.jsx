@@ -1,5 +1,8 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router"
 import Cadastro from './cadastro'
+import Login from "./login"
+import esqueceusenha from "./esqueceusenha"
+import Esqueceusenha from "./esqueceusenha"
 
 function App() {
 
@@ -7,7 +10,9 @@ function App() {
    <BrowserRouter>
     <Routes>
       <Route path="/" element={<Cadastro/>}/>
-    </Routes>
+      <Route path="/Login" element={<Login/>}/>
+      <Route path="/Esqueceusenha" element={<Esqueceusenha/>}/>
+    </Routes> 
    
    </BrowserRouter>
   )
