@@ -1,4 +1,4 @@
-// impoetação do React
+// importação do React
 import React from "react";
 
 const ExemploProps = ({nome , idade}) => {
