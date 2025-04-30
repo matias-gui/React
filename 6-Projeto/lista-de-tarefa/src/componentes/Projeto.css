@@ -1,25 +1,20 @@
-div {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
 
-}
 main{
     display: flex;
     flex-flow: column;
+    flex-wrap: wrap;
     border-radius: 5px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.279);
+    max-width: 600px;
     background-color: darkgray;
-    max-width: 50vw;
-    width: 50vw;
-    height: 40vh;
+    margin: 0 auto;
     padding: 10px;
     margin-top: 15px;
 }
 h2{
     text-align: center;
     margin-bottom: 20px;
+    color:  rgb(47, 79, 79);
 }
 .form{
  display: flex;
@@ -30,4 +25,23 @@ h2{
 .input{
     width: 100%;
     padding: 10px;
+}
+.mensagem{
+    text-align: center;
+    margin-top: 10px;
+}
+.todo-lista{
+    list-style: none;
+    margin-top: 5px;
+}
+.todo-item{
+    background-color:  rgba(47, 79, 79, 0.436);
+    padding: 3px;
+    margin: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-delete{
+    padding: 1px;
 }
