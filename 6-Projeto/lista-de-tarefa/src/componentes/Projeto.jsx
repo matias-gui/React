@@ -21,6 +21,11 @@ const Projeto = () => {
       setInputValue("");
     }
   }
+  const deletar = (id) => {
+    const excluir = window.confirm("Tem certeza que deseja excluir?")
+    if(excluir){
+    setTodo(todo.filter((task) => task.id !== id))}
+  }
 
   return (
     <div>
@@ -30,14 +35,14 @@ const Projeto = () => {
           <input type="text" placeholder='Adicionar tarefa' className='input'
             value={inputValue}
             onChange={(e) => { setInputValue(e.target.value) }} />
-          <button type="submit">Adicionar</button>
+          <button type="submit" className='button-submit'>Adicionar</button>
         </form>
         {todo.length === 0 && <p className='mensagem'> Não há tarefas </p>}
         <ul className='todo-lista'>
           {todo.map((todo) => (
             <li key={todo.id} className='todo-item'>
               {todo.text}
-              <button className='button-delete'>Delete</button>
+              <button className='button-delete' onClick={() => deletar(todo.id)}>Delete</button>
             </li>
           ))
           }
